@@ -243,12 +243,12 @@ brand_name = st.text_input('Brand Name', 'Enter the Brand Name pf the product')
 item_condition = st.selectbox('Item Condition',('Best', 'Good', 'Normal', 'Poor', 'Bad'))
 category = st.text_input('Item Condition',('Enter Item consition in the format main catgeory/sub category/sub-sub category'))
 shipping = st.selectbox('Shipping Fees',('Shipping to be paid by the buyer', 'Shipping to be paid by the seller'))
-apply = st.button(' Apply ')
+# apply = st.button(' Apply ')
 
 
 # pritning the final prediction on web app
 # pritning the final prediction on web app
-if apply:
+if (st.button(' Apply ')):
     if product_name is not None:
         if item_condition is not None:
             if shipping is not None:
