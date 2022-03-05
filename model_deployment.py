@@ -288,7 +288,7 @@ if (st.button(' Apply ')):
                 final_price = np.exp(predicted_price)
                 
                 st.text('')
-                st.write('Predicted Price is $ {}'.format(round(final_price[0],2)))
+                st.write('Predicted Price is $ {}'.format(np.round(final_price[0],2)))
                 print(final_price[0])
                 
 #             else: st.write('Please enter shipping details')
